@@ -1,20 +1,15 @@
-# Core dependencies
+# Required core packages
 streamlit>=1.35.0
 pandas>=2.2.2
 plotly>=5.22.0
 Pillow>=10.3.0
+matplotlib>=3.8.0  # Required for background_gradient
 
-# Optional but used in your app
-numpy>=2.2.0
-
-# Used in data handling and image previews
-jinja2>=3.1.3
-
-# Required if working with zipped files
-lz4>=4.3.2
-
-# Ensure compatibility with image previews, download buttons, etc.
+# Useful for zip handling and rich display (used implicitly)
+rich>=14.1.0
 markdown-it-py>=3.0.0
 pygments>=2.19.2
 mdurl>=0.1.2
-rich>=14.1.0
+
+# Optional: numpy is indirectly used by pandas/plotly
+numpy>=2.2.0
